@@ -28,11 +28,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product {
-  background: rgb(255, 223, 231);
+  background: rgb(242, 243, 245);
   padding: 20px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+}
+
+.product-title {
+margin-bottom: 2px;
+}
+
+.product-price {
+  margin: 10px;
 }
 
 .product .emoji {
@@ -43,11 +51,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   font-size: 18px;
   appearance: none;
-  border: none;
-  background: lightgray;
-  border-radius: 20px;
+  border: 1px solid black;
+  background: white;
   padding: 10px 20px;
-  color: white;
+  color: black;
   font-weight: bold;
   cursor: pointer;
 }
@@ -61,10 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cart .emoji {
-  background: white;
   width: 100px;
   height: 100px;
-  border-radius: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;

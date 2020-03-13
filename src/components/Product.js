@@ -7,13 +7,13 @@ export const Product = ({ product }) => {
   return (
     <article className="product">
       <span className="emoji" role="img" aria-label={product.title}>{product.emoji}</span>
-      <p>{product.title}</p>
-      <p>{product.price}:-</p>
+      <p className="product-title">{product.title}</p>
+      <p className="product-price">{product.price}:-</p>
 
       <button
         type="button"
         onClick={() => dispatch(cart.actions.addItem(product))} >
-        Add to cart
+        ADD TO CART
       </button>
     </article>
   )
