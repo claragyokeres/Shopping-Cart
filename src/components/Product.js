@@ -11,7 +11,7 @@ export const Product = ({ product }) => {
 
       <button
         type="button"
-        onClick={() => { }}>
+        onClick={() => dispatch(cart.actions.addItem(product))} >
         Add to cart
       </button>
     </article>

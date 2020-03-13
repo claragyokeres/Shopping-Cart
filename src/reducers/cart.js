@@ -7,7 +7,10 @@ export const cart = createSlice({
     },
     reducers: {
         addItem: (state, action) => {
+            state.items.push({ ...action.payload, quantity: 1 })
             console.log(action)
         }
     }
 })
+
+// Created a new object and spread in the action payload. 
