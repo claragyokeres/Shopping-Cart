@@ -22,7 +22,7 @@ export const cart = createSlice({
 
             if (existingProduct && existingProduct.quantity === 1) {
                 //remove the product entirely if it is less than one 
-                state.items = state.items.filter((item) => item.id === action.payload.id)
+                state.items = state.items.filter((item) => item.id !== action.payload.id)
             } else if (existingProduct) {
                 existingProduct.quantity -= 1
             }
